@@ -1,0 +1,45 @@
+ana_clara@LAPTOP-F9P8QEP8:~$ cd ~/CEN0336_13660999_P1 #Entrando no repositório da prova
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ nano script_ntcomp.py #Abrindo o editor de texto
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ python3 script_ntcomp.py #Testando o código com uma sequência aleatória, pequena e com a quantidade conhecida de cada nucleotídeo. Saída esperada: A=4, T=2, C=2, G=2
+Digite a sequência de DNA: AAAATTCCGG
+A: 4
+T: 2
+C: 2
+G: 2
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ python3 script_ntcomp.py #Testando o código com uma sequência que não apresenta os requisitos
+Digite a sequência de DNA: AAAATTCCGGSSSPPPP
+Erro: A sequência fornecida é inválida! Utilize apenas os nucleotídeos A, T, C e G.
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ python3 script_ntcomp.py #Testando o código com uma sequência vazia
+Digite a sequência de DNA:
+Erro: A sequência de DNA não pode estar vazia.
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git pull origin main --rebase #Sincronizando versões
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (6/6), 3.13 KiB | 114.00 KiB/s, done.
+From github.com:AnaOrlando/CEN0336_13660999_P1
+ * branch            main       -> FETCH_HEAD
+   06eca52..31431ef  main       -> origin/main
+Updating 06eca52..31431ef
+Fast-forward
+ "Quest\303\243o_03_script_completo" | 44 ++++++++++++++++++++++++++++++++++++++++++++
+ README.md                           |  2 +-
+ 2 files changed, 45 insertions(+), 1 deletion(-)
+ create mode 100644 "Quest\303\243o_03_script_completo"
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git add script_ntcomp.py
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git commit -m "Arquivos Questão 4: script_ntcomp.py"
+[main 9297092] Arquivos Questão 4: script_ntcomp.py
+ 1 file changed, 37 insertions(+)
+ create mode 100644 script_ntcomp.py
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 819 bytes | 273.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:AnaOrlando/CEN0336_13660999_P1.git
+   31431ef..9297092  main -> main
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$
