@@ -1,0 +1,44 @@
+ana_clara@LAPTOP-F9P8QEP8:~$ cd ~/CEN0336_13660999_P1 #entrando no repositório da prova
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ nano script_area.py
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ python3 script_area.py 10 20 #Verificando o código, com esses números o script deve funcionar e retornar uma área=100
+A área do triangulo retângulo com lados a=10 e b=20, é 100.0
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ python3 script_area.py 10 #Verificando erro por falta de argumentos
+Erro: digite dois números inteiros positivos
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ python3 script_area.py 500 20 #Verificando erro por argumento não estar
+no intervalor
+Erro: os valores a e b devem ser maiores que 0 e menores que 500
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git add script_area.py #três linhas de comanda para enviar script para o github
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git commit -m "Arquivos Questão 3: script_area.py"
+[main 2169a04] Arquivos Questão 3: script_area.py
+ 1 file changed, 32 insertions(+)
+ create mode 100644 script_area.py
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git push
+To github.com:AnaOrlando/CEN0336_13660999_P1.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:AnaOrlando/CEN0336_13660999_P1.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git pull origin main --rebase
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 2.28 KiB | 466.00 KiB/s, done.
+From github.com:AnaOrlando/CEN0336_13660999_P1
+ * branch            main       -> FETCH_HEAD
+   93166d3..ec82d3a  main       -> origin/main
+Successfully rebased and updated refs/heads/main.
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 758 bytes | 758.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:AnaOrlando/CEN0336_13660999_P1.git
+   ec82d3a..06eca52  main -> main
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ #ali deu um erro, porque as alterações do github não estavam no computador, então antes de fazer o push foi necessário primeiro sincronizar as duas versões
