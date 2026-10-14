@@ -1,0 +1,14 @@
+total 48
+drwxr-x--- 8 ana_clara ana_clara 4096 Oct 14 11:14 .
+drwxr-xr-x 3 root      root      4096 Sep 30 19:14 ..
+-rw------- 1 ana_clara ana_clara 1051 Oct 14 10:51 .bash_history
+-rw-r--r-- 1 ana_clara ana_clara  220 Sep 30 19:14 .bash_logout
+-rw-r--r-- 1 ana_clara ana_clara 3771 Sep 30 19:14 .bashrc
+drwxr-x--- 4 ana_clara ana_clara 4096 Sep 30 19:17 .cache
+drwxr-x--- 3 ana_clara ana_clara 4096 Sep 30 19:17 .config
+drwxr-xr-x 2 ana_clara ana_clara 4096 Oct 14 10:17 .landscape
+-rw-rw-r-- 1 ana_clara ana_clara    0 Oct 14 10:17 .motd_shown
+-rw-r--r-- 1 ana_clara ana_clara  807 Sep 30 19:14 .profile
+drwx------ 2 ana_clara ana_clara 4096 Sep 30 19:56 .ssh
+drwxr-xr-x 3 ana_clara ana_clara 4096 Oct 14 11:19 CEN0336_13660999_P1
+drwxr-xr-x 3 ana_clara ana_clara 4096 Oct 14 10:35 cen0336
