@@ -1,0 +1,51 @@
+ana_clara@LAPTOP-F9P8QEP8:~$ cd ~/CEN0336_13660999_P1 #Entrando no repositório da prova
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ nano script_cDNA.py #Abrindo o editor de texto
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ cp script_cDNA.py script_CDS.py #testando com a sequência proposta pela questão
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ python3 script_cDNA.py CGTCGTCGCCGCCGCCGCCATGTCGGGAGGTGGTGTGATGTGTGAGCCGACGAAAAGTAAAAGAAGCGGGGAACAACGACTGCCGCATCTACGTGTAAAAAAACGAAAAAAAAAAAAAAAAAAAA 20 39 47 56 64 98
+ATGTCGGGAGGTGGTGTGATCCGACGAAAAAAGCGGGGAACAACGACTGCCGCATCTACGTGTAA
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ cp script_cDNA.py script_CDS.py #testando com argumentos que não condizem com os requisitos
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ python3 script_cDNA.py CGTCGTCGCCGCCGCCGCCATGTCGGGAGGTGGTGTGATGTGTGAGCCGACGAAAAGTAAAAGAAGCGGGGAACAACGACTGCCGCATCTACGTGTAAAAAAACGAAAAAAAAAAAAAAAAAAAA 20 39 47
+Erro: Forneça 7 argumentos: a sequência de DNA e as coordenadas n1 n2 n3 n4 n5 n6.
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ cp script_cDNA.py script_CDS.py #testando com argumentos que não condizem com os requisitos
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ python3 script_cDNA.py CGTCGTCGCCGCCGCCGCCATGTCGGGAGGTGGTGTGATGTGTGAGCCGACGAAAAGTAAAAGAAGCGGGGAACAACGACTGCCGCATCTACGTGTAAAAAAACGAAAAAAAAAAAAAAAAAAAA 20 39 47 56 64 10000
+Erro: Nenhuma coordenada pode ser maior que o tamanho da sequência (125 nt).
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git pull origin main --rebase #Sincronizando versões
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 1.86 KiB | 126.00 KiB/s, done.
+From github.com:AnaOrlando/CEN0336_13660999_P1
+ * branch            main       -> FETCH_HEAD
+   9297092..43d1d28  main       -> origin/main
+Updating 9297092..43d1d28
+Fast-forward
+ "Quest\303\243o_04_script_completo" | 45 +++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 45 insertions(+)
+ create mode 100644 "Quest\303\243o_04_script_completo"
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git commit -m "Arquivos Questão 5: script_cDNA.py"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        script_CDS.py
+        script_cDNA.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git add script_cDNA.py #Sequência de três linhas de comando para mandar arquivo para o github
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git commit -m "Arquivos Questão 5: script_cDNA.py" 
+[main 627b640] Arquivos Questão 5: script_cDNA.py
+ 1 file changed, 54 insertions(+)
+ create mode 100644 script_cDNA.py
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.02 KiB | 523.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:AnaOrlando/CEN0336_13660999_P1.git
+   43d1d28..627b640  main -> main
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$
