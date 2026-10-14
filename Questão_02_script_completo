@@ -1,0 +1,66 @@
+ana_clara@LAPTOP-F9P8QEP8:~$ cd ~
+ana_clara@LAPTOP-F9P8QEP8:~$ git clone git@github.com:AnaOrlando/CEN0336_13660999_P1.git
+Cloning into 'CEN0336_13660999_P1'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+ana_clara@LAPTOP-F9P8QEP8:~$ cd CEN0336_13660999_P1 #entrando no repositório da prova, depois de cloná-lo
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ cat << 'EOF' > bash_script.sh #criando um script em bash
+> #!/bin/bash
+> pwd #mostra onde está dentro das pastas e arquivos
+> ls -la ~ > lista_HOME.txt #gera uma lista detalahada do conteúdo present no home e salva em um novo arquivo
+> date #imprime a data atual da tela
+> EOF
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ chmod +x bash_script.sh #dando permissão para executar o script
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ ./bash_script.sh #executando o arquivo
+/home/ana_clara/CEN0336_13660999_P1
+Wed Oct 14 11:19:33 -03 2026
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ cat lista_HOME.txt #verificando o conteúdo do arquivo que recebeu o conteúdo do home
+total 48
+drwxr-x--- 8 ana_clara ana_clara 4096 Oct 14 11:14 .
+drwxr-xr-x 3 root      root      4096 Sep 30 19:14 ..
+-rw------- 1 ana_clara ana_clara 1051 Oct 14 10:51 .bash_history
+-rw-r--r-- 1 ana_clara ana_clara  220 Sep 30 19:14 .bash_logout
+-rw-r--r-- 1 ana_clara ana_clara 3771 Sep 30 19:14 .bashrc
+drwxr-x--- 4 ana_clara ana_clara 4096 Sep 30 19:17 .cache
+drwxr-x--- 3 ana_clara ana_clara 4096 Sep 30 19:17 .config
+drwxr-xr-x 2 ana_clara ana_clara 4096 Oct 14 10:17 .landscape
+-rw-rw-r-- 1 ana_clara ana_clara    0 Oct 14 10:17 .motd_shown
+-rw-r--r-- 1 ana_clara ana_clara  807 Sep 30 19:14 .profile
+drwx------ 2 ana_clara ana_clara 4096 Sep 30 19:56 .ssh
+drwxr-xr-x 3 ana_clara ana_clara 4096 Oct 14 11:19 CEN0336_13660999_P1
+drwxr-xr-x 3 ana_clara ana_clara 4096 Oct 14 10:35 cen0336
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git add bash_script.sh lista_HOME.txt #sequência de três linhas de código para enviar script para o git
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git commit -m "Arquivos questão 2: bash_script.sh e lista_HOME.txt"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <ana_clara@LAPTOP-F9P8QEP8.localdomain>) not allowed
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git config --global user.email "anaclara.orlando@usp.br" #configurando o git para fazer o commit
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git config --global user.name "AnaOrlando" #configurando o git para fazer o commit
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git commit -m "Arquivos questão 2: bash_script.sh e lista_HOME.txt" #fazendo o commit
+[main 93166d3] Arquivos questão 2: bash_script.sh e lista_HOME.txt
+ 2 files changed, 18 insertions(+)
+ create mode 100755 bash_script.sh
+ create mode 100644 lista_HOME.txt
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$ git push #enviando para o repositório no github
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 791 bytes | 395.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:AnaOrlando/CEN0336_13660999_P1.git
+   117d724..93166d3  main -> main
+ana_clara@LAPTOP-F9P8QEP8:~/CEN0336_13660999_P1$
